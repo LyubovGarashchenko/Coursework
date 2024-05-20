@@ -10,6 +10,6 @@ services:
       - ./schema:/docker-entrypoint-initdb.d
     environment:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
-      - MYSQL_DATABASE=app
-      - MYSQL_USER=app
-      - MYSQL_PASSWORD=pass
+      - MYSQL_DATABASE=mysql
+      - MYSQL_USER=lyubov
+      - MYSQL_PASSWORD=1F4h8k3b5t2w!
