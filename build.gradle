@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'io.qameta.allure' version '2.11.2'
     id 'io.freefair.lombok' version '8.2.2'
+
 }
 
 group = 'ru.netology'

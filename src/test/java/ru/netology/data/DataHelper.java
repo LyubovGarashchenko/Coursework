@@ -71,6 +71,9 @@ public class DataHelper {
     public static String getMonthOverTwelve() {
         return ("14");
     }
+    public static String getLastMonth() {
+        return ("10");
+    }
 
     public static String getMonthWithLatinAndCyrillic() {
         return ("mayмай");
@@ -95,11 +98,11 @@ public class DataHelper {
     public static String getLastYear() {
         return ("20");
     }
+    public static String getCurrentYear() {
+        return ("24");
+    }
     public static String getYearWithTwoZero() {
         return ("00");
-    }
-    public static String getYearAboveValidPeriod() {
-        return ("30");
     }
 
     public static String getYearWith1Number() {
@@ -113,6 +116,9 @@ public class DataHelper {
     public static String getYearWithSymbols() {
         return ("%*");
     }
+    public static String getYearNotExist() {
+        return ("30");
+    }
 
     public static String getNameHolder() {
         return faker.name().firstName() + " " + faker.name().lastName();
@@ -122,10 +128,12 @@ public class DataHelper {
         return faker.name().firstName() + "-" + faker.name().firstName() + " " + faker.name().lastName();
     }
 
-    public static String getHolderLastNameWithDash() {
-        return faker.name().firstName() + " " + faker.name().lastName() + "-" + faker.name().lastName();
+    public static String getHolderNameWithIotatedLetters() {
+        return faker.name().firstName() + "Артём" + faker.name().lastName() + "Йосипчук" + faker.name().lastName();
     }
-
+    public static String getHolderWithAnApostropheInLastName() {
+        return faker.name().firstName() + "Жанна" + faker.name().lastName() + "д'Арк" + faker.name().lastName();
+    }
     public static String getHolderNameWithDash() {
         return faker.name().firstName() + "-" + faker.name().firstName() + " " + faker.name().lastName() + "-" + faker.name().lastName();
     }
@@ -134,12 +142,11 @@ public class DataHelper {
         return faker.name().firstName();
     }
 
-    public static String getHolderNameWithCyrillic() {
-        return fakerRus.name().firstName() + " " + fakerRus.name().lastName();
-    }
-
-    public static String getHolderNameWithLatAndRus() {
+    public static String getHolderNameWithLatinAndCyrillic() {
         return faker.name().firstName() + " " + fakerRus.name().lastName();
+    }
+    public static String getHolderNameWithLat() {
+        return faker.name().firstName() + " " + faker.name().lastName();
     }
 
     public static String getHolderNameWithSymbols() {
@@ -152,6 +159,9 @@ public class DataHelper {
 
     public static String getHolderFirstNameWithSpace() {
         return faker.name().firstName() + " " + faker.name().firstName() + " " + faker.name().lastName();
+    }
+    public static String getHolderFirstNameWithoutSpace() {
+        return faker.name().firstName() + faker.name().lastName();
     }
 
     public static String getCvc() {

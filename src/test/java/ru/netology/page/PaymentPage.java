@@ -84,7 +84,6 @@ public class PaymentPage {
 
     public void verifyNotificationDeclinedCard() {
         blockNotification.shouldHave(exactText("Карта заблокирована. Попробуйте использовать другую карту или " +
-                        "обратиться в службу поддержки Банка"), Duration.ofSeconds(20))
-                .shouldBe(visible);
+                        "обратиться в службу поддержки Банка"), Duration.ofSeconds(20)).shouldBe(visible);
     }
 }
