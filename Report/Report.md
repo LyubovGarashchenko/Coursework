@@ -8,7 +8,9 @@ ___
 успешных - 27 (69%);
 
 неуспешных - 12 (31%).
-![Test Summary.jpg](..%2F..%2F..%2FOneDrive%2FDesktop%2F%D1%EA%F0%E8%ED%FB%20%E4%EB%FF%20%EA%F3%F0%F1%EE%E2%EE%E9%2FTest%20Summary.jpg)
+
+![Test Summary](https://github.com/user-attachments/assets/26510a0b-7ded-4991-82c2-a3a345be65ba)
+
 
 В результате тестирования составлено 12 issues.
 ___
