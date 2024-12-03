@@ -93,7 +93,7 @@ public class PaymentPageTest {
     public void shouldPaymentWhenCardDateIsNextCurrent() {
         paymentPage.verifyFormName();
         paymentPage.fillForm(new DataHelper.CardInfo(getApprovedCardNumber(),
-                getSpecifiedMonth(1), getYear(0), getNameHolder(), getCvc()));
+                getSpecifiedMonth(1), getYear(1), getNameHolder(), getCvc()));
         paymentPage.verifyNotificationSuccessPayment();
     }
 
